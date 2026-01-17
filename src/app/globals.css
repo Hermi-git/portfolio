@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Color scheme: Modern Purple */
+    --background: 270 10% 97%;
+    --foreground: 270 10% 15%;
+    --card: 270 5% 100%;
+    --card-foreground: 270 10% 15%;
+    --popover: 270 5% 100%;
+    --popover-foreground: 270 10% 15%;
+    --primary: 270 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 270 40% 70%;
+    --secondary-foreground: 270 10% 15%;
+    --muted: 270 10% 85%;
+    --muted-foreground: 270 5% 45%;
+    --accent: 270 70% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 270 15% 88%;
+    --input: 270 10% 92%;
+    --ring: 270 60% 50%;
+    --chart-1: 270 70% 55%;
+    --chart-2: 300 65% 60%;
+    --chart-3: 240 60% 55%;
+    --chart-4: 280 70% 50%;
+    --chart-5: 260 65% 55%;
+    --radius: 0.75rem;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+  }
+
+  .dark {
+    --background: 270 15% 8%;
+    --foreground: 270 5% 95%;
+    --card: 270 12% 12%;
+    --card-foreground: 270 5% 95%;
+    --popover: 270 12% 12%;
+    --popover-foreground: 270 5% 95%;
+    --primary: 270 80% 65%;
+    --primary-foreground: 270 15% 8%;
+    --secondary: 270 50% 75%;
+    --secondary-foreground: 270 15% 8%;
+    --muted: 270 10% 25%;
+    --muted-foreground: 270 5% 65%;
+    --accent: 270 90% 70%;
+    --accent-foreground: 270 15% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 270 15% 20%;
+    --input: 270 10% 18%;
+    --ring: 270 70% 60%;
+    --chart-1: 270 80% 60%;
+    --chart-2: 300 75% 65%;
+    --chart-3: 240 75% 60%;
+    --chart-4: 280 80% 55%;
+    --chart-5: 260 75% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl lg:text-7xl tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-5xl tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl tracking-tight;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed font-light;
+  }
+
+  .title {
+    @apply text-2xl text-center w-full md:text-7xl font-heading font-bold;
+  }
+
+  .sub-title {
+    @apply text-xl text-center md:text-4xl font-heading font-semibold;
+  }
+
+  a {
+    @apply text-primary hover:text-primary/80 transition-colors duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-purple-600;
+  }
+}
+
+@layer components {
+  .btn-base {
+    @apply px-6 py-2 rounded-lg font-medium transition-all duration-300 ease-out;
+  }
+
+  .btn-primary {
+    @apply btn-base bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply btn-base bg-secondary text-secondary-foreground hover:bg-secondary/90 active:scale-95;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-1;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary bg-size-200 animate-pulse-soft;
+  }
+}
