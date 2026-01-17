@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import {
-    IconBrandAngularFilled,
     IconBrandCSharp,
     IconBrandDocker,
     IconBrandFirebase,
@@ -23,10 +22,7 @@ import { Element } from "react-scroll";
 import {
     IconDart,
     IconBrandReddis,
-    IconBrandNeo4j,
     IconBrandPostgres,
-    IconBrandPytorch,
-    IconBrandTensorflow,
     IconBrandRabbitMQ,
     IconBrandFastAPI,
 } from "@/components/icons/index"

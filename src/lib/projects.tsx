@@ -1,5 +1,5 @@
 import { Section } from "@/components/sections";
-import { IconBrandGithub, IconDatabase } from "@tabler/icons-react";
+import { IconDatabase } from "@tabler/icons-react";
 
 
 export interface Project {
