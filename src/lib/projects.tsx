@@ -106,33 +106,37 @@ export const projects: Project[] = [
     {
         id: "3",
         title: "Brana ERP",
-        description: "An ERP System user for Customer Relation Management,Inventory Management,Human resource Management and Multi Organization Management.",
+        description: "A scalable ERP system frontend with modular HR modules (Landing and HR) built using Next.js and Turborepo, featuring role-based access control and seamless backend integration.",
         thumbnail: "/Brana_Erp.png",
         links: [],
         time: "Jun 2025 - September 2025",
-        tags: ["Asp.Net Core", "C#", "Sql Server","Entity Framework Core","Docker"],
+        tags: ["Next.js", "React.js", "Turborepo", "TypeScript", "Tailwind CSS"],
         details: {
             sections: [
                 {
                     type: "text",
                     title: "Project Overview",
-                    content: `Brana ERP is an Enterprise Resource Planning system designed to manage Customer Relation Management, Inventory Management, Human Resource Management, and Multi-Organization Management. The system aims to streamline business processes, improve data accuracy, and enhance organizational efficiency through integrated modules and user-friendly interfaces.`
+                    content: `Brana ERP is an Enterprise Resource Planning system frontend built with a scalable monorepo architecture using Turborepo. Developed modular ERP modules focusing on the Landing page and HR module with role-based access control, multi-organization support, and seamless API integration.`
                 },
                 {
                     type: "bullet",
                     title: "Key Features",
                     items: [
-                        "Customer Relation Management",
-                        "Inventory Management",
-                        "Human Resource Management",
-                        "Multi-Organization Management"
+                        "Scalable monorepo architecture using Turborepo",
+                        "Modular HR submodules (Department, Recruitment, Employee, Skill Types, Job Position)",
+                        "Role-based access control for multi-organization support",
+                        "Reusable and maintainable UI components",
+                        "Frontend authentication and authorization",
+                        "Optimized performance with code splitting and lazy loading"
                     ]
                 },
                 {
                     type: "bullet",
-                    title: "Tech Stacks",
+                    title: "Tech Stack",
                     items: [
-                        "**Backend**: Asp.Net Core, C#, Sql Server, Entity Framework Core, Docker"
+                        "**Frontend**: Next.js, React.js, TypeScript, Tailwind CSS",
+                        "**Architecture**: Turborepo for monorepo management",
+                        "**State Management**: RESTful API integration with role-based workflows"
                     ],
                 },
             ]

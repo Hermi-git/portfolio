@@ -20,7 +20,7 @@ export const ProjectsSection = ({ className }: { className?: string }) => {
 
 
                 {/* projects go here */}
-                <motion.div className="mt-16 grid grid-cols-12 gap-4">
+                <motion.div className="mt-16 grid grid-cols-12 gap-6 md:gap-8 px-4 md:px-0">
                     {
                         projects.map((project, index) => (
                             <ProjectItem
