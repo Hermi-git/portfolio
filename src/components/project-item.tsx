@@ -139,8 +139,8 @@ export const ProjectItem = (
 
             <AnimatePresence initial={false} mode="popLayout">
                 {open && (
-                    <DialogContent className="md:min-w-[80vw] md:min-h-[70vh] overflow-visible outline select-none">
-                        <div className="flex flex-col md:flex-row gap-4 h-full">
+                    <DialogContent className="md:max-w-4xl md:max-h-[85vh] overflow-hidden outline select-none p-6 md:p-8">
+                        <div className="flex flex-col md:flex-row gap-6 h-full">
 
                             {/* Left: Sticky Thumbnail */}
                             <div className="md:sticky md:top-0 md:h-full md:w-1/3 flex-shrink-0">
